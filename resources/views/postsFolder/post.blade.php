@@ -8,7 +8,7 @@
                 <div class="col-md-8">
                     <h2 class="mb-3 text-white">{{ $post->title }}</h2>
                     <p class="text-white">
-                        By: <a style="color: #37beb0" class="text-decoration-none" href="/posts?author={{ $post->author->username }}">{{ $post->author->name }}</a> in <a style="color: #37beb0" class="text-decoration-none" href="/posts?category={{ $post->category->slug }}">{{ $post->category->name }}</a>
+                        By: <a class="text-decoration-none text-dark" href="/posts?author={{ $post->author->username }}">{{ $post->author->name }}</a> in <a class="text-decoration-none text-dark" href="/posts?category={{ $post->category->slug }}">{{ $post->category->name }}</a>
                     </p>
 
                     @if ($post->image)
